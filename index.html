@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script>
+        function setName() {
+            const nameField = document.getElementById("username");
+            const name = nameField.value;
+            const wantchange = document.getElementById("profile-link");
+            wantchange.innerText = name + " Profile";
+        }
+
+        function setImage(){
+            const imageField = document.getElementById("image-url");
+            const imageUrl = imageField.value;
+            const picture = document.getElementById("profileImage");
+            picture.style.backgroundImage = "url("+imageUrl+")"
+        }
+    </script>
+
+</head>
+<body>
+    <main>
+        <div class="parent" id="profileImage">
+            <div class="child">
+            </div>
+        </div>
+        <a id="profile-link" href="https://www.facebook.com/zeroice.sirawit.5/" target="_blank">my profile</a>
+        <div class="flex">
+            <p> Set the username</p>
+            <input id="username" type="text">
+            <button onclick="setName()">Set!</button>
+        </div>
+        <div class="flex">
+            <p> Set profile image url</p>
+            <input id="image-url" type="text">
+            <button onclick="setImage()">Set!</button>
+        </div>
+        <div class="gallery">
+            <div class="image"></div>
+            <div class="image"></div>
+            <div class="image"></div>
+            <div id="extend-col" class="image"></div>
+            <div class="image"></div>
+            <div id="extend-row" class="image"></div>
+            <div class="image"></div>
+            <div class="image"></div>
+            <div class="image"></div>
+            <div class="image"></div>
+        </div>
+
+    </main>
+</body>
+</html>

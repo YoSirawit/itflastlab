@@ -1,0 +1,133 @@
+main {
+    width : 1024px;
+    border: 2px gray solid;
+    min-height: 100vh;
+    margin: 0px auto;
+    display: flex;
+        flex-flow: column;
+    align-items: center;
+    background-color: #ffdada;
+}
+
+.parent {
+    margin-top: 10px;
+    background-color: red;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    border-radius: 9999px;
+}
+
+#profileImage {
+    background-image: url(https://i.redd.it/takanashi-hoshino-blue-archive-v0-923w5s6fbfga1.jpg?s=8eab5da27443eb6f5445f9f97ba6d29922cee8b9);
+    background-size: cover;
+    background-position: center;
+}
+
+.child {
+    position: absolute;
+        top : 75%;
+        left : 75%;
+    background-color: blue;
+    width: 40px;
+    height: 40px;
+    border-radius: 9999px;
+}
+
+p {
+    margin: 0;
+}
+
+.flex {
+    margin: 5px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+        gap: 0px 10px;
+    align-items: center;
+}
+
+.gallery {
+    display: grid;
+    gap: 16px;
+    grid-template-columns: 3fr 3fr 3fr;
+    grid-template-rows: repeat(4, 4fr);
+    margin-bottom: 10px;
+}
+
+.gallery .image{
+    width: 200px;
+    height: 200px;
+    background-color: black;
+    border-radius: 7px;
+}
+
+#extend-col {
+    grid-column: span 2;
+    background-color: red;
+    width: 100%;
+    height: 100%;
+}
+
+#profile-link {
+    color: black;
+    font-size: 48px;
+    font-weight: bold;
+}
+
+#profile-link:hover {
+    color: blue;
+    text-decoration: underline;
+}
+
+.gallery .image:nth-child(1) {
+    background-image: url(https://static.zerochan.net/Takanashi.Hoshino.full.3406681.jpg);
+    background-size: cover;
+}
+.gallery .image:nth-child(2) {
+    background-image: url(https://w0.peakpx.com/wallpaper/195/638/HD-wallpaper-video-game-blue-archive-takanashi-hoshino-heterochromia.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.gallery .image:nth-child(3) {
+    background-image: url(https://cdn.donmai.us/sample/aa/db/__hoshino_and_hoshino_blue_archive_drawn_by_nasan_coldtime__sample-aadbb25f3bb549bc5d41f77687791461.jpg);
+    background-size: cover;
+}
+.gallery .image:nth-child(4) {
+    background-image: url(https://images2.alphacoders.com/129/1290306.png);
+    background-size: cover;
+    background-position: center;
+}
+.gallery .image:nth-child(5) {
+    background-image: url(https://c4.wallpaperflare.com/wallpaper/415/875/758/anime-anime-girls-blue-archive-takanashi-hoshino-blue-archive-hd-wallpaper-preview.jpg);
+    background-size: cover;
+}
+.gallery .image:nth-child(6) {
+    background-image: url(https://mfiles.alphacoders.com/989/989521.jpg);
+    background-size: cover;
+}
+.gallery .image:nth-child(7) {
+    background-image: url(https://img2.joyreactor.cc/pics/post/ketchup-k-Hoshino-\(Blue-Archive\)-Blue-Archive-7979295.png);
+    background-size: cover;
+}
+.gallery .image:nth-child(8) {
+    background-image: url(https://steamuserimages-a.akamaihd.net/ugc/1978800146623275586/19BC703E73B8841285E06B445849F6B1B33BE4F4/?imw=268&imh=268&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true);
+    background-size: cover;
+}
+.gallery .image:nth-child(9) {
+    background-image: url(https://cdn.donmai.us/sample/30/c7/__hoshino_blue_archive_drawn_by_klaius__sample-30c7a59b2a27b9046bff059de9da7bfd.jpg);
+    background-size: cover;
+}
+.gallery .image:nth-child(10) {
+    background-image: url(https://scontent.fbkk6-1.fna.fbcdn.net/v/t39.30808-6/257662527_254816610039866_4783122102774790277_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeFKqzUWVJqFmtZGdphmLH8EtKVy0risTJO0pXLSuKxMk2IypNIWJmzSvqBGuHdhL7B5-ecvyRmbZuBvGH4kNATO&_nc_ohc=z8JsGeiyiSsAX8MbaCX&_nc_ht=scontent.fbkk6-1.fna&oh=00_AfBe8BWCCukalL61z41h7-ET1tHaCnj-q_Pt6DIYeVi8Ug&oe=6541054C);
+    background-size: cover;
+}
+
+#extend-row {
+    grid-row: span 2;
+    background-color: red;
+    width: 100%;
+    height: 100%;
+}
