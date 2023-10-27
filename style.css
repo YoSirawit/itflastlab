@@ -75,6 +75,7 @@ p {
     color: black;
     font-size: 48px;
     font-weight: bold;
+    text-decoration: none;
 }
 
 #profile-link:hover {
